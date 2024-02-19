@@ -1,14 +1,14 @@
 # 📖 학습하기
 
 ## 📚 단계별 학습
-24년 02월 18일 목표(90px)까지 80px 남았습니다.
+24년 02월 18일 목표(25px)까지 15px 남았습니다.
 
 ![10xp](https://img.shields.io/badge/EXP-10xp-%235cb85c.svg?for-the-badge)
-![0일째](https://img.shields.io/badge/연속학습-0일째-%23E34F26.svg?for-the-badge)
+![4일째](https://img.shields.io/badge/연속학습-4일째-%23E34F26.svg?for-the-badge)
 
 |총 문제수|획득 경험치|연속 학습|
 |---:|---:|---|
-1|10xp|0일째❄️|
+1|10xp|4일째🔥|
 
 |교재|이름|난이도|상태|최근 제출 코드|
 |---|---|:---:|:---:|---|
