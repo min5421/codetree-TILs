@@ -1,14 +1,14 @@
 # 📖 학습하기
 
 ## 📚 단계별 학습
-24년 02월 16일 목표(90px)를 달성했어요🥳.
+24년 02월 16일 목표(25px)를 달성했어요🥳.
 
 ![210xp](https://img.shields.io/badge/EXP-210xp-%235cb85c.svg?for-the-badge)
-![0일째](https://img.shields.io/badge/연속학습-0일째-%23E34F26.svg?for-the-badge)
+![2일째](https://img.shields.io/badge/연속학습-2일째-%23E34F26.svg?for-the-badge)
 
 |총 문제수|획득 경험치|연속 학습|
 |---:|---:|---|
-20|210xp|0일째❄️|
+20|210xp|2일째🔥|
 
 |교재|이름|난이도|상태|최근 제출 코드|
 |---|---|:---:|:---:|---|
