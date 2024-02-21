@@ -11,7 +11,7 @@ public class Main {
         else if (a == 2) {
             System.out.println("Tom");
         }
-        else if (a >= 3) {
+        else if (a == 3) {
             System.out.println("Paul");
         }
         else {
