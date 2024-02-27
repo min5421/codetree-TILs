@@ -13,13 +13,13 @@ public class Main {
 
         int covid = 0;
 
-        if(a.equals("Y") || aa >= 37){
+        if(a.equals("Y") && aa >= 37){
             covid++;
         }
-        if(b.equals("Y") || bb >= 37){
+        if(b.equals("Y") && bb >= 37){
             covid++;
         }
-        if(c.equals("Y") || cc >= 37){
+        if(c.equals("Y") && cc >= 37){
             covid++;
         }
 
