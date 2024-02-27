@@ -8,14 +8,21 @@ public class Main {
         int c = sc.nextInt();
         int max;
 
-        if (a > b && a > c) {
-            max = a;
+        if(a > b){
+            if(a > c){
+                max = a;
+            }
+            else{
+                max = c;
+            }
         }
-        else if (b > a && b > c) {
-            max = b;
-        }
-        else {
-            max = c;
+        else{
+            if(b > c){
+                max = b;
+            }
+            else {
+                max = c;
+            }
         }
 
         System.out.println(max);
