@@ -3,11 +3,15 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double a = sc.nextDouble();
-        double b = sc.nextDouble();
-        double result = a / b;
+        int a = sc.nextInt();
+        int b = sc.nextInt();
 
-        System.out.printf("%.20f", result);
+        System.out.print(a/b + ".");
+
+        for(int i = 0; i < 20; i++){
+            a = (a % b) * 10;
+            System.out.print(a/b);
+        }
         
     }
 }
