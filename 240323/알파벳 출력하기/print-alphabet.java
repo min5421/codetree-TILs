@@ -11,7 +11,7 @@ public class Main {
                 System.out.print((char)x);
                 x++;
                 if(x == 92){
-                    x = 56;
+                    x = 65;
                 }
             }
             System.out.println();
