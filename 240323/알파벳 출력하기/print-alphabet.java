@@ -10,7 +10,7 @@ public class Main {
             for(int j = 0; j <= i; j++){
                 System.out.print((char)x);
                 x++;
-                if(x == 92){
+                if(x == 91){
                     x = 65;
                 }
             }
