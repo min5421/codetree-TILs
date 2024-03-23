@@ -13,6 +13,9 @@ public class Main {
             for(int j = 0; j < n-i; j++){
                 System.out.print(cnt+" ");
                 cnt++;
+                if(cnt == 'Z'+1){
+                    cnt = 'A';
+                }
             }
             System.out.println();
         }
