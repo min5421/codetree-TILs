@@ -15,7 +15,7 @@ public class Main {
             cnt++;
         }
 
-        for(int i = 0; i < cnt; i++){
+        for(int i = cnt-3; i < cnt; i++){
             sum += arr[i];
         }
 
