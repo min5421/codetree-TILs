@@ -7,7 +7,7 @@ public class Main {
         String idx = "None";
         char n = sc.next().charAt(0);
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i <= 5; i++) {
             if (word[i] == n) {
                 idx = Integer.toString(i);
             }
