@@ -17,7 +17,7 @@ public class Main {
             arra[i] = sc.nextInt();
         }
 
-        while(cnt <= n1-n2){
+        while(cnt <= n1-n2 && !check){
             for(int i = cnt; i < n1; i++){
                 if(arra[i] == arrb[0]){
                     cnt = i;
