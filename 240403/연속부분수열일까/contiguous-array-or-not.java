@@ -14,7 +14,7 @@ public class Main {
             arra[i] = sc.nextInt();
         }
         for(int i = 0; i < n2; i++){
-            arra[i] = sc.nextInt();
+            arrb[i] = sc.nextInt();
         }
 
         while(cnt <= n1-n2 && !check){
