@@ -8,6 +8,7 @@ public class Main {
         int[] arra = new int[n1];
         int[] arrb = new int[n2];
         int cnt = 0;
+        boolean check = false;
 
         for(int i = 0; i < n1; i++){
             arra[i] = sc.nextInt();
@@ -17,12 +18,21 @@ public class Main {
         }
 
         for(int i = 0; i < n1; i++){
-            if(arra[i] == arrb[cnt]){
-                cnt++;
+            if(arra[i] == arrb[0]){
+                cnt = i;
+            }
+        }
+        for(int i = 0; i < n2; i++){
+            if(arra[cnt+i] == arrb[i]){
+                check = true;
+            }
+            else{
+                check = false;
+                break;
             }
         }
 
-        if(cnt == arrb.length){
+        if(check){
             System.out.println("Yes");
         }
         else{
