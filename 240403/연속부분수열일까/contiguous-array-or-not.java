@@ -17,19 +17,22 @@ public class Main {
             arra[i] = sc.nextInt();
         }
 
-        for(int i = 0; i < n1; i++){
-            if(arra[i] == arrb[0]){
-                cnt = i;
+        while(cnt <= n1-n2){
+            for(int i = cnt; i < n1; i++){
+                if(arra[i] == arrb[0]){
+                    cnt = i;
+                }
             }
-        }
-        for(int i = 0; i < n2; i++){
-            if(arra[cnt+i] == arrb[i]){
-                check = true;
+            for(int i = 0; i < n2; i++){
+                if(arra[cnt+i] == arrb[i]){
+                    check = true;
+                }
+                else{
+                    check = false;
+                    break;
+                }
             }
-            else{
-                check = false;
-                break;
-            }
+            cnt++;
         }
 
         if(check){
