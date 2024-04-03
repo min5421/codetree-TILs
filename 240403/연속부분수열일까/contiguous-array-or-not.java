@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n1 = sc.nextInt();
+        /*int n1 = sc.nextInt();
         int n2 = sc.nextInt();
         int[] arra = new int[n1];
         int[] arrb = new int[n2];
@@ -14,15 +14,24 @@ public class Main {
         }
         for(int i = 0; i < n2; i++){
             arrb[i] = sc.nextInt();
-        }
+        }*/
+
+        int n1 = 4;
+        int n2 = 2;
+        int[] arra = {4,4,4,4};
+        int[] arrb = {4,3};
+        boolean check = false;
+
         
-        for(int i = 0; i < n1; i++){
+        for(int i = 0; i <= n1-n2; i++){
             if(arra[i] == arrb[0]){
                 for(int j = 1; j < n2; j++){
                     if(arra[i+j] == arrb[j]){
+                        System.out.println("1");
                         check = true;
                     }
                     else{
+                        System.out.println("2");
                         check = false;
                         break;
                     }
