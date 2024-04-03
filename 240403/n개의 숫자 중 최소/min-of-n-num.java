@@ -13,6 +13,7 @@ public class Main {
         int cnt = 1;
         for (int i = 1; i < n; i++) {
             if (minVal > arr[i]) {
+                cnt = 1;
                 minVal = arr[i];
             }
             else if(minVal == arr[i]){
