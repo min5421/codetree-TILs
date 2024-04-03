@@ -7,7 +7,6 @@ public class Main {
         int n2 = sc.nextInt();
         int[] arra = new int[n1];
         int[] arrb = new int[n2];
-        int cnt = 0;
         boolean check = false;
 
         for(int i = 0; i < n1; i++){
@@ -17,22 +16,19 @@ public class Main {
             arrb[i] = sc.nextInt();
         }
 
-        while(cnt <= n1-n2 && !check){
-            for(int i = cnt; i < n1; i++){
-                if(arra[i] == arrb[0]){
-                    cnt = i;
+        
+        for(int i = 0; i < n1; i++){
+            if(arra[i] == arrb[0]){
+                for(int j = 1; j < n2; j++){
+                    if(arra[i+j] == arrb[j]){
+                        check = true;
+                    }
+                    else{
+                        check = false;
+                        break;
+                    }
                 }
             }
-            for(int i = 0; i < n2; i++){
-                if(arra[cnt+i] == arrb[i]){
-                    check = true;
-                }
-                else{
-                    check = false;
-                    break;
-                }
-            }
-            cnt++;
         }
 
         if(check){
