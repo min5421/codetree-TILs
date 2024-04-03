@@ -15,19 +15,23 @@ public class Main {
         for(int i = 0; i < n2; i++){
             arrb[i] = sc.nextInt();
         }
-
         
         for(int i = 0; i < n1; i++){
             if(arra[i] == arrb[0]){
                 for(int j = 1; j < n2; j++){
                     if(arra[i+j] == arrb[j]){
+                        System.out.println("1");
                         check = true;
                     }
                     else{
+                        System.out.println("2");
                         check = false;
                         break;
                     }
                 }
+            }
+            if(check){
+                break;
             }
         }
 
