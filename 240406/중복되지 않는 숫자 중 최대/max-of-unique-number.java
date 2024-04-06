@@ -23,8 +23,9 @@ public class Main {
         for(int i = 1; i <= n; i++){
             if(arr[i] != arr[i-1] && arr[i] != arr[i+1]){
                 System.out.println(arr[i]);
-                break;
+                System.exit(0);
             }
         }
+        System.out.println("-1");
     }
 }
