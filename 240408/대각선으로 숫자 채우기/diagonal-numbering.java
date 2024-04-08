@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int m = sc.nextInt();
+        int n = 10;//sc.nextInt();
+        int m = 5;//sc.nextInt();
         int[][] arr = new int[n][m];
 
         int num = 1;
@@ -35,15 +35,15 @@ public class Main {
                     num++;
                 }
             }
-            for(int i = 0; i < m-1; i++){
+            for(int i = 0; i <= n-m; i++){
                 for(int j = m-1; j >= 0; j--){
                     arr[i+m-j-1][j] = num;
                     num++;
                 }
             }
-            for(int i = 1; i < m; i++){
+            for(int i = n-m+1; i < n; i++){
                 for(int j = 0; j < m-i; j++){
-                    arr[m-2+i+j][m-j-1] = num;
+                    arr[i+j][m-j-1] = num;
                     num++;
                 }
             }
