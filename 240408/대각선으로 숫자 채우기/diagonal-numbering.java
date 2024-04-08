@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = 10;//sc.nextInt();
-        int m = 5;//sc.nextInt();
+        int n = sc.nextInt();
+        int m = sc.nextInt();
         int[][] arr = new int[n][m];
 
         int num = 1;
