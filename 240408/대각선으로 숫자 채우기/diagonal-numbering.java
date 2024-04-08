@@ -42,7 +42,7 @@ public class Main {
                 }
             }
             for(int i = n-m+1; i < n; i++){
-                for(int j = 0; j < m-i; j++){
+                for(int j = 0; j < n-i; j++){
                     arr[i+j][m-j-1] = num;
                     num++;
                 }
