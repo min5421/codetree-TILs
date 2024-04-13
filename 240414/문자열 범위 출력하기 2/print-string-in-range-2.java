@@ -6,8 +6,16 @@ public class Main {
         String s = sc.next();
         int n = sc.nextInt();
 
-        for(int i = s.length()-1; i > s.length()-1-n; i--){
-            System.out.print(s.charAt(i));
+        
+        if(s.length() < n){
+            for(int i = s.length()-1; i > s.length()-1-n; i--){
+                System.out.print(s.charAt(i));
+            }
+        }
+        else{
+            for(int i = s.length()-1; i >= 0; i--){
+                System.out.print(s.charAt(i));
+            }
         }
     }
 }
