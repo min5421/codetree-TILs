@@ -24,8 +24,7 @@ public class Main {
                     a = a.substring(0,i)+a.substring(i+b.length());
                     break;
                 }
-
-                if(i == a.length()-b.length()){
+                else if(i == a.length()-b.length()){
                     check = false;
                 }
             }
