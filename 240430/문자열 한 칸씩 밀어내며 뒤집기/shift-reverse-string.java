@@ -17,9 +17,12 @@ public class Main {
                 s = s.substring(len-1,len)+s.substring(0,len-1);
             }
             else{
+                char[] arr = s.toCharArray();
+                char[] rearr = new char[len];
                 for(int j = 0; j < len; j++){
-                    s = s.substring(0,j)+s.substring(len-1,len)+s.substring(j,len-1);
+                    rearr[j] = arr[len-1-j];
                 }
+                s = String.valueOf(rearr);
             }
 
             System.out.println(s);
