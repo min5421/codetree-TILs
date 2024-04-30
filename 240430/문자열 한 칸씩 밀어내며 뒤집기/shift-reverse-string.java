@@ -20,6 +20,7 @@ public class Main {
                 for(int j = len-1; j >= 0; j--){
                     System.out.print(s.charAt(j));
                 }
+                System.out.println();
             }
         }
     }
