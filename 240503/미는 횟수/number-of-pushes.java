@@ -8,13 +8,13 @@ public class Main {
         int n = 0;
         boolean equal = false;
 
-        for(int i = 0; i < t.length(); i++){
-            t = t.substring(t.length()-1) + t.substring(0,t.length()-1);
-            n++;
+        for(int i = 0; i <= t.length(); i++){
             if(s.equals(t)){
                 equal = true;
                 break;
             }
+            t = t.substring(t.length()-1) + t.substring(0,t.length()-1);
+            n++;
         }
 
         if(!equal){
