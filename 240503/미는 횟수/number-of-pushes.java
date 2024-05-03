@@ -17,7 +17,7 @@ public class Main {
             n++;
         }
 
-        if(!equal){
+        if(!equal || s.length() > 100 || s.length() < 2){
             n = -1;
         }
         System.out.println(n);
