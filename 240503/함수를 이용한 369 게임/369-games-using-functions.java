@@ -19,7 +19,8 @@ public class Main {
     public static boolean number(int i){
         String s = Integer.toString(i);
         for(int j = 0; j < s.length(); j++){
-            if(((int)s.charAt(j)-'0') % 3 == 0){
+            char c = s.charAt(j);
+            if(c == '3' || c == '6' || c == '9'){
                 return true;
             }
         }
