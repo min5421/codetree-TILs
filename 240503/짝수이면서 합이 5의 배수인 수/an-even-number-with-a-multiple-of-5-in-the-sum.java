@@ -14,6 +14,6 @@ public class Main {
     }
 
     public static boolean isTrue(int n){
-        return n % 2 == 0 || (n / 10 + n % 10) % 5 == 0;
+        return n % 2 == 0 && (n / 10 + n % 10) % 5 == 0;
     }
 }
