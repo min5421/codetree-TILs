@@ -8,8 +8,8 @@ public class Main {
         int sum = 0;
 
         for(int i = a; i <= b; i++){
-            if(primeNumber(i)){
-            sum += i;
+            if(primeNumber(i) && i != 1){
+                sum += i;
             }
         }
 
