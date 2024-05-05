@@ -15,7 +15,10 @@ public class Main {
     }
 
     public static boolean isit(int m, int n){
-        if(m == 2){
+        if(m > 12){
+            return false;
+        }
+        else if(m == 2){
             if(n <= 28){
                 return true;
             }
@@ -30,7 +33,7 @@ public class Main {
                 return true;
             }
         }
-        
+
         return false;
     }
 }
