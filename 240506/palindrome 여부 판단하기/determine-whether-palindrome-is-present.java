@@ -10,7 +10,7 @@ public class Main {
             System.out.println("Yes");
         }
         else{
-            System.out.println("no");
+            System.out.println("No");
         }
     }
 
