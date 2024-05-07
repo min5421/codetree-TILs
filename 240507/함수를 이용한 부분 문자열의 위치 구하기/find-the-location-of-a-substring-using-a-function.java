@@ -1,29 +1,28 @@
 import java.util.Scanner;
 
 public class Main {
-    public static int a = -1;
+    public static String s;
+    public static String t;
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String s = sc.next();
-        String t = sc.next();
+        s = sc.next();
+        t = sc.next();
 
-        check(s, t);
-        System.out.println(a);
+        System.out.println(where());
     }
 
-    public static int check(String s, String t) {
+    public static int where() {
         for(int i = 0; i <= s.length()-t.length(); i++){
             for(int j = 0; j < t.length(); j++){
                 if(s.charAt(i+j) != t.charAt(j)){
                     break;
                 }
                 if(j == t.length()-1){
-                    a = i;
-                    return 0;
+                    return i;
                 }
             }
         }
-        return 0;
+        return -1;
     }
 }
