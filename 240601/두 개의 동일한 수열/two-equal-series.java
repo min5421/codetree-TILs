@@ -16,16 +16,20 @@ public class Main {
 
         Arrays.sort(a);
         Arrays.sort(b);
-        isSame(a,b);
+        if(isSame(a,b)){
+            System.out.println("Yes");
+        }
+        else{
+            System.out.println("No");
+        }
     }
 
-    public static void isSame(int[] a, int[] b){
+    public static boolean isSame(int[] a, int[] b){
         for(int i = 0; i < a.length; i++){
             if(a[i] != b[i]){
-                System.out.println("No");
-                break;
+                return false;
             }
         }
-        System.out.println("Yes");
+        return true;
     }
 }
