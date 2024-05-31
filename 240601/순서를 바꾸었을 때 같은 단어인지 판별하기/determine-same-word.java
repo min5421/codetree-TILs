@@ -7,7 +7,7 @@ public class Main {
         String a = sc.next();
         String b = sc.next();
         char[] aarr = a.toCharArray();
-        char[] barr = a.toCharArray();
+        char[] barr = b.toCharArray();
 
         Arrays.sort(aarr);
         Arrays.sort(barr);
