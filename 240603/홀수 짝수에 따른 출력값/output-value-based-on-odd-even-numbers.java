@@ -15,11 +15,7 @@ public class Main {
         else if(n == 2){
             return 2;
         }
-        else if(n % 2 == 1){
-            return n + f(n-2);
-        }
-        else{
-            return n + f(n-1);
-        }
+
+        return n + f(n-2);
     }
 }
