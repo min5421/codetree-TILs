@@ -13,7 +13,7 @@ public class Main {
             return 1;
         }
         else if(n == 2){
-            return 3;
+            return 2;
         }
         else if(n % 2 == 1){
             return n + f(n-2);
