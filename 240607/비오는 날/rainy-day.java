@@ -58,13 +58,13 @@ public class Main {
 
         for(int i = 1; i < cnt; i++){
             if(year < data[i].year){
-                break;
+                continue;
             }
             else if(year == data[i].year && month < data[i].month){
-                break;
+                continue;
             }
             else if(year == data[i].year && month == data[i].month && day < data[i].day){
-                break;
+                continue;
             }
 
             year = data[i].year;
