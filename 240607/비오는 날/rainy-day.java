@@ -37,7 +37,7 @@ public class Main {
         }
  
         Data rain = data[findNearDay(data, cnt)];
-        
+
         String month0 = "";
         String day0 = "";
         if(rain.month < 10){
@@ -47,7 +47,7 @@ public class Main {
             day0 = "0";
         }
 
-        System.out.println(rain.year+"-"+month0+rain.month+"-"+rain.day+" "+rain.day_of_week+" "+rain.weather);
+        System.out.println(rain.year+"-"+month0+rain.month+"-"+day0+rain.day+" "+rain.day_of_week+" "+rain.weather);
     }
 
     public static int findNearDay(Data[] data, int cnt){
