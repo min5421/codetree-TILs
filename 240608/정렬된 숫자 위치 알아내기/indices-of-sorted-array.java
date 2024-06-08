@@ -12,16 +12,6 @@ class Number{
     }
 }
 
-class Rank{
-    int rank;
-    int ccnt;
-
-    public Rank(int rank, int ccnt){
-        this.rank = rank;
-        this.ccnt = ccnt;
-    }
-}
-
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -43,15 +33,13 @@ public class Main {
             }
         });
 
-        Rank[] rank = new Rank[n];
+        int[] rank = new int[n];
         for(int i = 0; i < n; i++){
-            rank[i] = new Rank(numbers[i].cnt, i+1);
+            rank[numbers[i].cnt-1] = i+1;
         }
 
-        Arrays.sort(rank, (a, b) -> a.rank-b.rank);
-
         for(int i = 0; i < n; i++){
-            System.out.print(rank[i].ccnt+" ");
+            System.out.print(rank[i]+" ");
         }
     }
 }
