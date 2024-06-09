@@ -32,7 +32,7 @@ public class Main {
                     d1 = num_of_days[m1];
                 }
             }
-            day *= -1;
+            //day *= -1;
         }
 
         System.out.println(yoil[day%7]);
