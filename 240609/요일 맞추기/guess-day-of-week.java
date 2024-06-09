@@ -34,7 +34,7 @@ public class Main {
             }
         }
 
-        System.out.println(yoil[day/7]);
+        System.out.println(yoil[day%7]);
     }
 
     public static boolean check(int m1, int m2, int d1, int d2){
