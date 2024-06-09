@@ -34,15 +34,15 @@ public class Main {
     }
 
     public static boolean check(int a, int b, int c){
-        if(a < 11){
-            return false;
+        if(a > 11){
+            return true;
         }
-        else if(b < 11){
-            return false;
+        else if(b > 11){
+            return true;
         }
-        else if(c < 11){
-            return false;
+        else if(c > 11){
+            return true;
         }
-        return true;
+        return false;
     }
 }
