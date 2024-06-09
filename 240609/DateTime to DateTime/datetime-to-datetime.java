@@ -34,7 +34,10 @@ public class Main {
     }
 
     public static boolean check(int a, int b, int c){
-        if(a > 11){
+        if(a == 11 && b == 11 && c == 11){
+            return true;
+        }
+        else if(a > 11){
             return true;
         }
         else if(b > 11){
