@@ -32,9 +32,10 @@ public class Main {
                     d1 = num_of_days[m1];
                 }
             }
+            day *= -1;
         }
 
-        System.out.println(yoil[(day*-1)%7]);
+        System.out.println(yoil[day%7]);
     }
 
     public static boolean check(int m1, int m2, int d1, int d2){
