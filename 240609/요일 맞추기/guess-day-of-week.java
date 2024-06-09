@@ -24,7 +24,7 @@ public class Main {
         }
         else{
             while(!(m1 == m2 && d1 == d2)){
-                day++;
+                day--;
                 d1--;
 
                 if(d1 == 0){
@@ -34,7 +34,7 @@ public class Main {
             }
         }
 
-        System.out.println(yoil[day%7]);
+        System.out.println(yoil[(day*-1)%7]);
     }
 
     public static boolean check(int m1, int m2, int d1, int d2){
