@@ -24,7 +24,7 @@ public class Main {
         }
         else{
             while(!(m1 == m2 && d1 == d2)){
-                day--;
+                day++;
                 d1--;
 
                 if(d1 == 0){
