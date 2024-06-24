@@ -27,7 +27,7 @@ public class Main {
             cnt++;
         }
 
-        if(num % 7 > 0 && num % 7 >= cnt){
+        if(cnt > 0 && num % 7 >= cnt){
             return num / 7 + 1;
         }
         
