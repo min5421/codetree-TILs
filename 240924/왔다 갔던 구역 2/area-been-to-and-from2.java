@@ -19,8 +19,8 @@ public class Main {
             }
             else{
                 for(int j = 0; j < dis; j++){
-                    point++;
                     arr[point]++;
+                    point++;
                 }
             }
         }
