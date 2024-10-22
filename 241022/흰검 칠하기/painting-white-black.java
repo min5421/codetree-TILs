@@ -14,18 +14,20 @@ public class Main {
             
             if(s.equals("L")){
                 arr[point][0]++;
+                color[point] = 1;
                 for(int j = 1; j < a; j++){
                     point--;
                     arr[point][0]++;
-                    color[point] = 2;
+                    color[point] = 1;
                 }
             }
             else{
                 arr[point][1]++;
+                color[point] = 2;
                 for(int j = 1; j < a; j++){
                     point++;
                     arr[point][1]++;
-                    color[point] = 1;
+                    color[point] = 2;
                 }
             }
         }
@@ -37,10 +39,10 @@ public class Main {
             if(arr[i][0]>1 && arr[i][1]>1){
                 gray++;
             }
-            else if(color[i] == 2){
+            else if(color[i] == 1){
                 white++;
             }
-            else if(color[i] == 1){
+            else if(color[i] == 2){
                 black++;
             }
         }
