@@ -39,8 +39,8 @@ public class Main {
                     developers[x][1] += 1;
                 }
                 else if(developers[y][1] < K && developers[x][1] >= K){
-                    developers[y][0] = 1;
-                    developers[x][1] += 1;
+                    developers[x][0] = 1;
+                    developers[y][1] += 1;
                 }
                 else if(developers[y][1] < K && developers[x][1] < K){
                     developers[y][0] = 1;
