@@ -25,14 +25,30 @@ public class Main {
             int x = txy[i][1];
             int y = txy[i][2];
 
-            if(developers[x][0] == 1 && developers[x][1] < K){
+            if(developers[x][0] == 1 && developers[y][0] == 0 && developers[x][1] < K){
                     developers[y][0] = 1;
                     developers[x][1] += 1;
             }
-            if(developers[y][0] == 1 && developers[y][1] < K){
+            else if(developers[x][0] == 0 && developers[y][0] == 1 && developers[y][1] < K){
                     developers[x][0] = 1;
                     developers[y][1] += 1;
-            }            
+            }       
+            else if(developers[x][0] == 1 && developers[y][0] == 1){
+                if(developers[x][1] < K && developers[y][1] >= K){
+                    developers[y][0] = 1;
+                    developers[x][1] += 1;
+                }
+                else if(developers[y][1] < K && developers[x][1] >= K){
+                    developers[y][0] = 1;
+                    developers[x][1] += 1;
+                }
+                else if(developers[y][1] < K && developers[x][1] < K){
+                    developers[y][0] = 1;
+                    developers[x][1] += 1;
+                    developers[y][0] = 1;
+                    developers[x][1] += 1;
+                }
+            }     
         }
 
         for(int i = 1; i <= N; i++){
