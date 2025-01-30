@@ -19,8 +19,8 @@ public class Main {
                 dir = (dir + 1) % 4;
             }
             else if(s.equals("F")){
-                x = dx[dir];
-                y = dy[dir];
+                x += dx[dir];
+                y += dy[dir];
             }
         }
 
