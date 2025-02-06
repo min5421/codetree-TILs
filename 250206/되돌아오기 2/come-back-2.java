@@ -30,6 +30,9 @@ public class Main {
             }
         }
 
+        if(!(x == 0 && y == 0)){
+            cnt = -1;
+        }
         System.out.println(cnt);
     }
 }
