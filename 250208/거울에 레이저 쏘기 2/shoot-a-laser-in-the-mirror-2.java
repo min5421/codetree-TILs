@@ -12,7 +12,7 @@ public class Main {
     }
 
     static void setStart(int k){
-        dir = k / n; //0123 = NEWS 북동서남
+        dir = (k - 1) / n; //0123 = NEWS 북동서남
 
         if(dir == 0){
             x = 0;
@@ -20,11 +20,11 @@ public class Main {
         }
         else if(dir == 1){
             x = (k-1) % n;
-            y = 0;
+            y = n - 1;
         }
         else if(dir == 2){
             x = n - 1 - ((k-1) % n);
-            y = n - 1;
+            y = 0;
         }
         else{
             x = n - 1;
