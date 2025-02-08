@@ -4,15 +4,15 @@ public class Main {
 
     static int n, x, y, dir;
     static char[][] map;
-    static int[] dx = {-1, 0, 0, 1}; // NEWS
-    static int[] dy = {0, 1, -1, 0};
+    static int[] dx = {-1, 0, 1, 0}; // NESW
+    static int[] dy = {0, 1, 0, -1};
 
     static boolean inRange(int x, int y){
         return (x >= 0 && x < n && y >= 0 && y < n);
     }
 
     static void setStart(int k){
-        dir = (k - 1) / n; //0123 = NEWS 북동서남
+        dir = (k - 1) / n; //0123 = NESW 북동남서
 
         if(dir == 0){
             x = 0;
@@ -23,12 +23,12 @@ public class Main {
             y = n - 1;
         }
         else if(dir == 2){
-            x = n - 1 - ((k-1) % n);
-            y = 0;
-        }
-        else{
             x = n - 1;
             y = n - 1 - ((k-1) % n);
+        }
+        else{
+            x = n - 1 - ((k-1) % n);
+            y = 0;
         }
     }
 
@@ -36,11 +36,16 @@ public class Main {
         int cnt = 0;
         while(inRange(x, y)){
             if(map[x][y] == '/'){
-                /*0123 = NEWS 북동서남
+                /*0123 = NESW 북동남서
                 nw북서
                 es동남                    
                 */
-                dir = (dir + 2) % 4; 
+                if(dir % 2 == 0){
+                    dir = (dir + 3) % 4;
+                }
+                else{
+                    dir = (dir + 1) % 4;
+                }
             }
             else{
                 /*
@@ -57,12 +62,7 @@ public class Main {
 
             x += dx[dir];
             y += dy[dir];
-            if(dir % 2 == 0){
-                dir = (dir + 3) % 4;
-            }
-            else{
-                dir = (dir + 1) % 4;
-            }
+            dir = (dir + 2) % 4;
             cnt++;
         }
 
