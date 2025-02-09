@@ -33,6 +33,9 @@ public class Main {
             x += dx[dir];
             y += dy[dir];
             c++;
+            if(c > 'Z'){
+                c = 'A';
+            }
             arr[x][y] = c;
         }
 
