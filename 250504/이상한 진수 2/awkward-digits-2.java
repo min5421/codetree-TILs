@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Main {
 
     static String changeNum(String a, int i){
-        if(a.charAt(i) == 1){
+        if(a.charAt(i) == '1'){
             return a.substring(0, i) + "0"  + a.substring(i+1);
         }
         else{
@@ -30,6 +30,4 @@ public class Main {
 
         System.out.println(max);
     }
-
-    
 }
