@@ -23,9 +23,8 @@ public class Main {
         String a = sc.next();
 
         int max = Integer.MIN_VALUE;
-        for(int i = 1; i < a.length(); i++){
+        for(int i = 0; i < a.length(); i++){
             String num = changeNum(a, i);
-            //System.out.println(num+" = "+twoToTen(num));
             max = Math.max(twoToTen(num), max);
         }
 
